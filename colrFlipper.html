@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            body{
+                margin: 0px;
+                padding: 0px;
+                font-size: 5em;
+                font-family: 'Times New Roman', Times, serif;
+                width: auto;
+                background-color: darkcyan;
+            }
+            .Randomcolor {
+            
+            margin: 150px 200px 100px 250px;
+            border-radius: 2500px;
+            box-shadow: 4px 8px rgba(0,0,0,0.7);
+            background-color: cornflowerblue;
+            color:whitesmoke;
+
+
+            }
+
+            .Randomcolor:hover{
+                border: 4px dashed black;
+            }
+        </style>
+    </head>
+    <body>
+        <button class="Randomcolor" onclick="RandomColor()">RANDOM COLOUR</button>
+        <script>
+            function RandomColor() {
+                var x = Math.floor(Math.random() * 256);
+                var y = Math.floor(Math.random() * 256);
+                var z = Math.floor(Math.random() * 256);
+                var bgcolor = "rgb(" + x + "," + y + "," + z + ")";
+                document.body.style.backgroundColor = bgcolor;
+            }
+
+           
+        </script>
+    </body>
+</html>
